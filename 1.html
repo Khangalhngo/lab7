@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+</head>
+<body>
+	<script>	
+						a= prompt("toog oruul");
+						b= a.length;
+						sum =0;
+						for(x=0; x<b;x++){ 
+						 sum += parseInt(a[x]);
+						}
+						console.log(sum);
+						var n = sum.toString();
+
+							var p=n.length
+							console.log(p);
+						count= 0;
+						c=p/2;
+						for(i=0; i<(parseInt(c));i++,p--){
+							if (n[i]==n[p-1]) {
+								count++;
+							}else{
+								count--;
+							}
+						}
+						if (count==parseInt(c)) {
+							console.log("mon");
+						}else{
+							console.log("bish");
+						}
+		</script>
+
+</body>
+</html>

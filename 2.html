@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2</title>
+</head>
+<body>
+	<script type="text/javascript">
+		n= prompt("tootoo oruulna uu? ");
+		t=0;
+		o=0;
+		if (0<n,n<=36) {
+			if(n%4==0){	
+				t=parseInt(n/4);
+			}
+			else{
+				t=parseInt(n/4)+1;
+			}
+
+			o=n%4;
+			if(o==0){
+				window.alert(" 1dugeer orts "+ t + " davhar " + (o+4) + " deh haalga ");
+			}
+			else{
+			window.alert(" 1dugeer orts "+ t + " davhar " + o + " deh haalga ");
+			}			
+		}else
+		if (n>36,n<=72) {
+			if(n%4==0){	
+				t=parseInt((n-36)/4);
+			}
+			else{
+				t=parseInt((n-36)/4)+1;
+			}
+
+			o=n%4;
+			if(o==0){
+				window.alert(" 2dugeer orts "+ t + " davhar " + (o+4) + " deh haalga ");
+			}
+			else{
+			window.alert(" 2dugeer orts "+ t + " davhar " + o + " deh haalga ");
+			}			
+		}else
+		if (n>72,n<=108) {
+			if(n%4==0){	
+				t=parseInt((n-73)/4);
+			}
+			else{
+				t=parseInt((n-73)/4)+1;
+			}
+
+			o=n%4;
+			if(o==0){
+				window.alert(" 3dugeer orts "+ t + " davhar " + (o+4) + " deh haalga ");
+			}
+			else{
+			window.alert(" 3dugeer orts "+ t + " davhar " + o + " deh haalga ");
+			}
+			}			
+	</script>
+</body>
+</html>
