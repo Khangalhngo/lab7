@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        2
+    </title>
+</head>
+<script>
+            function Find_Time()
+        {
+            var a=25,b=18,d1,d2,txt;
+            var c=Number(document.getElementById("N").value);
+                    c=c/b-c/a;
+                    c=c*60;
+                        d1=parseInt(c);
+                    c=c-d1;
+                    c=c*60;
+                        d2=parseInt(c);
+            txt=window.alert(d1+"minut"+d2+"secundiin daraa guitsne!");
+
+        }
+        </script>
+    </head>
+    <body>
+        zamiin urt<input type="number"  id = "N"/>
+        <button onClick="Find_Time()">CHECK</button>
+    </body>
+</html>
