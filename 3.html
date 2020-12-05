@@ -1,39 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>3</title>
+    <title>
+        2
+    </title>
 </head>
-<body>
-	<script type="text/javascript">
-		items = new Array();
-		for (i = 0; i<5; i++) {
-			items[i] = prompt("");
-		}
+<script>
+            function Find_Time()
+        {
+            var a=25,b=18,d1,d2,txt;
+            var c=Number(document.getElementById("N").value);
+                    c=c/b-c/a;
+                    c=c*60;
+                        d1=parseInt(c);
+                    c=c-d1;
+                    c=c*60;
+                        d2=parseInt(c);
+            txt=window.alert(d1+"minut"+d2+"secundiin daraa guitsne!");
 
-
-
-
-
-
-
-
-		var divisors = [3, 4, 10, 12, 15, 20, 30, 60];
-var items_to_divide = [10, 30];
-var divisor = false;
-for (var i = 0; i < divisors.length; i++) {
-    var divisorfound = true;
-    for (var j = 0; j < items_to_divide.length; j++) {
-        if ( divisors[i] %items_to_divide[j] !== 0) {
-            divisorfound = false;
-            break;
         }
-    }
-    if (divisorfound === true) {
-        divisor = divisors[i];
-        break;
-    }
-}
-console.log(divisor);
-	</script>
-</body>
+        </script>
+    </head>
+    <body>
+        zamiin urt<input type="number"  id = "N"/>
+        <button onClick="Find_Time()">CHECK</button>
+    </body>
 </html>
